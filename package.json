@@ -1,0 +1,24 @@
+{
+  "name": "hono-fullstack",
+  "module": "server/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.21.4"
+  },
+  "scripts": {
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "@kinde-oss/kinde-typescript-sdk": "^2.9.0",
+    "drizzle-orm": "^0.30.10",
+    "hono": "^4.3.1",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.6"
+  }
+}
